@@ -61,10 +61,6 @@ function Subgraph(props) {
   const [newBlog, setNewBlog] = useState("loading...");
   const [newTitle, setNewTitle] = useState("loading...");
 
-  useEffect(()=> {
-
-  }, data)
-
   const deployWarning = (
     <div style={{marginTop:8,padding:8}}>{"Warning: 🤔 Have you deployed your subgraph yet?"}</div>
   )

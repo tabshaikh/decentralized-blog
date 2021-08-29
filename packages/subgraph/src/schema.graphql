@@ -1,15 +1,7 @@
-type Purpose @entity {
-  id: ID!
-  sender: Sender!
-  purpose: String!
-  createdAt: BigInt!
-  transactionHash: String!
-}
-
-type Sender @entity {
+type Blog @entity {
   id: ID!
   address: Bytes!
-  purposes: [Purpose!] @derivedFrom(field: "sender")
+  title: String!
+  content: String!
   createdAt: BigInt!
-  purposeCount: BigInt!
 }

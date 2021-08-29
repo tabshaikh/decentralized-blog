@@ -1,3 +1,47 @@
 .App {
   text-align: center;
 }
+
+.ant-table-thead tr th {
+  background-color: lightgrey;
+}
+
+.publish-blog,
+.publish-blog:after,
+.publish-blog:focus {
+  width: 314px;
+  background: black;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #ffffff;
+
+  margin-top: 20px;
+}
+
+.publish-blog:hover {
+  background: white;
+  color: black;
+  border-color: black;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.blog {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ant-card-meta-detail > div {
+  text-align: left;
+}

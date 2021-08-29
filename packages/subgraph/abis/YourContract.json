@@ -16,35 +16,33 @@
       {
         "indexed": false,
         "internalType": "string",
-        "name": "purpose",
+        "name": "title",
         "type": "string"
-      }
-    ],
-    "name": "SetPurpose",
-    "type": "event"
-  },
-  {
-    "inputs": [],
-    "name": "purpose",
-    "outputs": [
+      },
       {
+        "indexed": false,
         "internalType": "string",
-        "name": "",
+        "name": "content",
         "type": "string"
       }
     ],
-    "stateMutability": "view",
-    "type": "function"
+    "name": "SetBlog",
+    "type": "event"
   },
   {
     "inputs": [
       {
         "internalType": "string",
-        "name": "newPurpose",
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "content",
         "type": "string"
       }
     ],
-    "name": "setPurpose",
+    "name": "setBlog",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

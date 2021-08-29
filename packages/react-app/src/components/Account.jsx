@@ -21,6 +21,7 @@ export default function Account({
     if (web3Modal.cachedProvider) {
       modalButtons.push(
         <Button
+          className="connectbutton"
           key="logoutbutton"
           style={{ verticalAlign: "top", marginLeft: 8, marginTop: 4 }}
           shape="round"
@@ -33,6 +34,7 @@ export default function Account({
     } else {
       modalButtons.push(
         <Button
+          className="connectbutton"
           key="loginbutton"
           style={{ verticalAlign: "top", marginLeft: 8, marginTop: 4 }}
           shape="round"

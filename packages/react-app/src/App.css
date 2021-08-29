@@ -45,3 +45,39 @@
 .ant-card-meta-detail > div {
   text-align: left;
 }
+
+.connectbutton,
+.connectbutton:focus {
+  background: black;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #ffffff;
+  border: black;
+}
+
+.connectbutton:hover {
+  background: white;
+  color: black;
+  border-color: black;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.ant-typography-copy,
+.ant-typography-copy:focus,
+.ant-typography-copy:hover {
+  color: black;
+}
+
+.anticon-wallet {
+  color: black !important;
+}

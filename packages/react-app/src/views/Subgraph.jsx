@@ -14,6 +14,8 @@ const { Option } = Select;
 
 const {Meta} = Card;
 
+const { TextArea } = Input;
+
   const highlight = { marginLeft: 4, marginRight: 8, backgroundColor: "#f9f9f9", padding: 4, borderRadius: 4, fontWeight: "bolder" }
 
 function Subgraph(props) {
@@ -67,12 +69,12 @@ function Subgraph(props) {
 
   return (
       <>
-          <div style={{width:780, margin: "auto", paddingBottom:64}}>
+          <div style={{width:780, margin: "auto", paddingBottom:64, paddingTop: 64}}>
 
             <div style={{margin:32, textAlign:'center'}}>
             
               <Input size="large" onChange={(e)=>{setNewTitle(e.target.value)}} placeholder="Enter blog title"/>
-              <Input size="large" style={{marginTop: "10px"}} onChange={(e)=>{setNewBlog(e.target.value)}} placeholder="Enter blog contents"/>
+              <TextArea autosize size="large" style={{marginTop: "10px"}} onChange={(e)=>{setNewBlog(e.target.value)}} placeholder="Enter blog contents"/>
 
               <Button className="publish-blog"
                onClick={()=>{
@@ -89,7 +91,7 @@ function Subgraph(props) {
                Publish Blog
              </Button>
             </div>
-            <div>
+            <div style={{paddingTop:32}}>
             { data ? data.blogs.map(blog => {
               return (
                 <Card key={blog.id} className="blog"
@@ -113,7 +115,7 @@ function Subgraph(props) {
           </div>
 
           <div style={{padding:64}}>
-          ...
+          Made with ❤️ by <a href="https://twitter.com/tabishjshaikh" target="_blank">@tabishjshaikh</a> using <a href="https://github.com/austintgriffith/scaffold-eth" target="_blank">scaffold-eth</a>
           </div>
       </>
   );

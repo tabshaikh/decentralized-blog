@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "antd/dist/antd.css";
 import { MailOutlined,EditOutlined, EllipsisOutlined, SettingOutlined  } from "@ant-design/icons";
-import { Row, Col, Button, List, Tabs, Menu, Select, Typography, Table, Input, Card, Avatar } from "antd";
+import { Row, Col, Button, List, Tabs, Menu, Select, Typography, Table, Input, Card, Avatar, PageHeader } from "antd";
 import { useQuery, gql } from '@apollo/client';
 import { Address } from "../components";
 import GraphiQL from 'graphiql';
@@ -75,8 +75,8 @@ function Subgraph(props) {
 
             <div style={{margin:32, textAlign:'center'}}>
             
-              <Input onChange={(e)=>{setNewTitle(e.target.value)}} placeholder="Enter blog title"/>
-              <Input onChange={(e)=>{setNewBlog(e.target.value)}} placeholder="Enter blog contents"/>
+              <Input size="large" onChange={(e)=>{setNewTitle(e.target.value)}} placeholder="Enter blog title"/>
+              <Input size="large" style={{marginTop: "10px"}} onChange={(e)=>{setNewBlog(e.target.value)}} placeholder="Enter blog contents"/>
 
               <Button className="publish-blog"
                onClick={()=>{

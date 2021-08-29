@@ -24,7 +24,7 @@
     "ramda": "^0.27.1"
   },
   "scripts": {
-    "chain": "buidler node",
+    "chain": "buidler node --hostname 0.0.0.0",
     "test": "buidler test --network buidlerevm",
     "compile": "buidler compile",
     "deploy": "buidler run scripts/deploy.js && buidler run scripts/publish.js",
